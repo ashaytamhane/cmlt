@@ -1,0 +1,259 @@
+\hypertarget{classmatrix__generic}{\section{matrix\-\_\-generic Class Reference}
+\label{classmatrix__generic}\index{matrix\-\_\-generic@{matrix\-\_\-generic}}
+}
+
+
+Matrix class.  
+
+
+
+
+{\ttfamily \#include $<$matrix\-\_\-generic.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmatrix__generic_a3cd0f27466cfca62aaa62d7115edd8bc}{get\-\_\-numrows} ()
+\item 
+int \hyperlink{classmatrix__generic_a359f8252df6ee6fa207a2881fb13f735}{get\-\_\-numcols} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classmatrix__generic_a62c778686fc6c1313e176fe6c5a5927a}{insert} (int row, int col, T i)
+\item 
+\hypertarget{classmatrix__generic_a229d21244d87626b8db145c6a55bc77a}{void {\bfseries insert} (int row, int col, string s)}\label{classmatrix__generic_a229d21244d87626b8db145c6a55bc77a}
+
+\item 
+float \hyperlink{classmatrix__generic_a08e93a0993b46d5373d5eb35211d0e8e}{operator()} (int, int)
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_a55abbb7eb09ab51a86d3ca9289b974ab}{operator()} (char c, int col)
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_a276b6bba1b5e097d83d0ec65adf30b2e}{operator()} (int row, char c)
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_a860de6cafb81579ae947efa84e99c355}{operator+} (\hyperlink{classmatrix__generic}{matrix\-\_\-generic} m)
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_ae2ae697439be499177bc533c6d14f5e5}{operator-\/} (\hyperlink{classmatrix__generic}{matrix\-\_\-generic} m)
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_af516ed0f1f95ad685752f73f938fb195}{operator$\ast$} (\hyperlink{classmatrix__generic}{matrix\-\_\-generic} m)
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_af010503cd68dced4e36c5906433d5820}{operator$\ast$} (float s)
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_a281b4886a11f4cf7db17a5be90e6ae48}{operator$\sim$} ()
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_a11716a2323f6e704ec8612e3c635fa86}{inv} ()
+\item 
+bool \hyperlink{classmatrix__generic_aa0123d920f55e4c67b340577f4c44e82}{is\-\_\-identity} ()
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_aff5d88e98977b464f52dfc07f005105d}{rrf} ()
+\item 
+vector$<$ \hyperlink{classmatrix__generic}{matrix\-\_\-generic} $>$ \hyperlink{classmatrix__generic_a195891981c45c1f9170885240bf56692}{qr\-\_\-factorize} ()
+\item 
+void \hyperlink{classmatrix__generic_aa7ee3a4252c6a42cef6eda6cd17373dd}{print} ()
+\item 
+void \hyperlink{classmatrix__generic_afce678d57fb5a54acfc9bd8e6cec93a7}{create\-\_\-rand} (int, int)
+\item 
+void \hyperlink{classmatrix__generic_aa77c12f86e18f3eda31e58054ac4e3f0}{normalize} ()
+\item 
+void \hyperlink{classmatrix__generic_abdfb50b45c340fe4b5f48c569c8f5428}{augment} (\hyperlink{classmatrix__generic}{matrix\-\_\-generic})
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_ac714c0ea75c1effe0f1f55edcc112a73}{ones} (int size)
+\item 
+\hypertarget{classmatrix__generic_a988519a5ca08be7dca985d682b56a4dc}{string {\bfseries get\-\_\-type} (string s)}\label{classmatrix__generic_a988519a5ca08be7dca985d682b56a4dc}
+
+\item 
+void \hyperlink{classmatrix__generic_a79d7d011cb15c4321bd16b5830879db4}{swaprows} (int r1, int r2)
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_a217dc9d9cd3c6841d1c235a9f2bff20f}{qr\-\_\-algorithm} ()
+\item 
+\hyperlink{classmatrix__generic}{matrix\-\_\-generic} \hyperlink{classmatrix__generic_aa1373338e0c0b4ab018312383971067d}{eigen} ()
+\item 
+int \hyperlink{classmatrix__generic_a40e95807065d76e0f47fb835941222dd}{rank} ()
+\item 
+\hypertarget{classmatrix__generic_a18b88ebe244323460e794a81c59f3b11}{{\bfseries matrix\-\_\-generic} (float f)}\label{classmatrix__generic_a18b88ebe244323460e794a81c59f3b11}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Matrix class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmatrix__generic_abdfb50b45c340fe4b5f48c569c8f5428}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!augment@{augment}}
+\index{augment@{augment}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{augment}]{\setlength{\rightskip}{0pt plus 5cm}void matrix\-\_\-generic\-::augment (
+\begin{DoxyParamCaption}
+\item[{{\bf matrix\-\_\-generic}}]{m1}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_abdfb50b45c340fe4b5f48c569c8f5428}
+Augment the matrix with the one given as arguement \hypertarget{classmatrix__generic_afce678d57fb5a54acfc9bd8e6cec93a7}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!create\-\_\-rand@{create\-\_\-rand}}
+\index{create\-\_\-rand@{create\-\_\-rand}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{create\-\_\-rand}]{\setlength{\rightskip}{0pt plus 5cm}void matrix\-\_\-generic\-::create\-\_\-rand (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_afce678d57fb5a54acfc9bd8e6cec93a7}
+Create a random matrix of i rows and j columns \hypertarget{classmatrix__generic_aa1373338e0c0b4ab018312383971067d}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!eigen@{eigen}}
+\index{eigen@{eigen}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{eigen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::eigen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_aa1373338e0c0b4ab018312383971067d}
+Get the eigen values of the matrix \hypertarget{classmatrix__generic_a359f8252df6ee6fa207a2881fb13f735}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!get\-\_\-numcols@{get\-\_\-numcols}}
+\index{get\-\_\-numcols@{get\-\_\-numcols}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{get\-\_\-numcols}]{\setlength{\rightskip}{0pt plus 5cm}int matrix\-\_\-generic\-::get\-\_\-numcols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a359f8252df6ee6fa207a2881fb13f735}
+Get number of rows of the matrix \hypertarget{classmatrix__generic_a3cd0f27466cfca62aaa62d7115edd8bc}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!get\-\_\-numrows@{get\-\_\-numrows}}
+\index{get\-\_\-numrows@{get\-\_\-numrows}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{get\-\_\-numrows}]{\setlength{\rightskip}{0pt plus 5cm}int matrix\-\_\-generic\-::get\-\_\-numrows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a3cd0f27466cfca62aaa62d7115edd8bc}
+Get number of rows of the matrix \hypertarget{classmatrix__generic_a62c778686fc6c1313e176fe6c5a5927a}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!insert@{insert}}
+\index{insert@{insert}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void matrix\-\_\-generic\-::insert (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col, }
+\item[{T}]{i}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a62c778686fc6c1313e176fe6c5a5927a}
+Insert an item into the matrix \hypertarget{classmatrix__generic_a11716a2323f6e704ec8612e3c635fa86}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!inv@{inv}}
+\index{inv@{inv}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::inv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a11716a2323f6e704ec8612e3c635fa86}
+Invert the matrix \hypertarget{classmatrix__generic_aa0123d920f55e4c67b340577f4c44e82}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!is\-\_\-identity@{is\-\_\-identity}}
+\index{is\-\_\-identity@{is\-\_\-identity}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{is\-\_\-identity}]{\setlength{\rightskip}{0pt plus 5cm}bool matrix\-\_\-generic\-::is\-\_\-identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_aa0123d920f55e4c67b340577f4c44e82}
+Check if the matrix is an identity matrix \hypertarget{classmatrix__generic_aa77c12f86e18f3eda31e58054ac4e3f0}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!normalize@{normalize}}
+\index{normalize@{normalize}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{normalize}]{\setlength{\rightskip}{0pt plus 5cm}void matrix\-\_\-generic\-::normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_aa77c12f86e18f3eda31e58054ac4e3f0}
+Normalize the matrix \hypertarget{classmatrix__generic_ac714c0ea75c1effe0f1f55edcc112a73}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!ones@{ones}}
+\index{ones@{ones}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{ones}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::ones (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_ac714c0ea75c1effe0f1f55edcc112a73}
+Create a square matrix of ones of given size \hypertarget{classmatrix__generic_a08e93a0993b46d5373d5eb35211d0e8e}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!operator()@{operator()}}
+\index{operator()@{operator()}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}float matrix\-\_\-generic\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a08e93a0993b46d5373d5eb35211d0e8e}
+Fetch the value at ith row and jth column \hypertarget{classmatrix__generic_a55abbb7eb09ab51a86d3ca9289b974ab}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!operator()@{operator()}}
+\index{operator()@{operator()}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::operator() (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a55abbb7eb09ab51a86d3ca9289b974ab}
+Support retrieving all rows of matrix. Example\-: A(\-:,1) returns a matrix with all rows for column 1 \hypertarget{classmatrix__generic_a276b6bba1b5e097d83d0ec65adf30b2e}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!operator()@{operator()}}
+\index{operator()@{operator()}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a276b6bba1b5e097d83d0ec65adf30b2e}
+Support retrieving all columns of matrix. Example\-: A(1,\-:) returns a matrix with all columns for row 1 \hypertarget{classmatrix__generic_af516ed0f1f95ad685752f73f938fb195}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf matrix\-\_\-generic}}]{m}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_af516ed0f1f95ad685752f73f938fb195}
+Multiply two matrices \hypertarget{classmatrix__generic_af010503cd68dced4e36c5906433d5820}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{s}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_af010503cd68dced4e36c5906433d5820}
+Multiple constant to a matrix \hypertarget{classmatrix__generic_a860de6cafb81579ae947efa84e99c355}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!operator+@{operator+}}
+\index{operator+@{operator+}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf matrix\-\_\-generic}}]{m}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a860de6cafb81579ae947efa84e99c355}
+Add two matrices \hypertarget{classmatrix__generic_ae2ae697439be499177bc533c6d14f5e5}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf matrix\-\_\-generic}}]{m}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_ae2ae697439be499177bc533c6d14f5e5}
+Subtract two matrices \hypertarget{classmatrix__generic_a281b4886a11f4cf7db17a5be90e6ae48}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!operator$\sim$@{operator$\sim$}}
+\index{operator$\sim$@{operator$\sim$}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{operator$\sim$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::operator$\sim$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a281b4886a11f4cf7db17a5be90e6ae48}
+Transpose the matrix \hypertarget{classmatrix__generic_aa7ee3a4252c6a42cef6eda6cd17373dd}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!print@{print}}
+\index{print@{print}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void matrix\-\_\-generic\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_aa7ee3a4252c6a42cef6eda6cd17373dd}
+Display the matrix \hypertarget{classmatrix__generic_a217dc9d9cd3c6841d1c235a9f2bff20f}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!qr\-\_\-algorithm@{qr\-\_\-algorithm}}
+\index{qr\-\_\-algorithm@{qr\-\_\-algorithm}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{qr\-\_\-algorithm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::qr\-\_\-algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a217dc9d9cd3c6841d1c235a9f2bff20f}
+Q\-R algorithm for getting eigen values \hypertarget{classmatrix__generic_a195891981c45c1f9170885240bf56692}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!qr\-\_\-factorize@{qr\-\_\-factorize}}
+\index{qr\-\_\-factorize@{qr\-\_\-factorize}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{qr\-\_\-factorize}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf matrix\-\_\-generic} $>$ matrix\-\_\-generic\-::qr\-\_\-factorize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a195891981c45c1f9170885240bf56692}
+Q\-R factorization. Returns a size 2 vector in which first matrix is Q and second is R \hypertarget{classmatrix__generic_a40e95807065d76e0f47fb835941222dd}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!rank@{rank}}
+\index{rank@{rank}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{rank}]{\setlength{\rightskip}{0pt plus 5cm}int matrix\-\_\-generic\-::rank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a40e95807065d76e0f47fb835941222dd}
+Return rank of the matrix \hypertarget{classmatrix__generic_aff5d88e98977b464f52dfc07f005105d}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!rrf@{rrf}}
+\index{rrf@{rrf}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{rrf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf matrix\-\_\-generic} matrix\-\_\-generic\-::rrf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_aff5d88e98977b464f52dfc07f005105d}
+Return the row reduced form of matrix \hypertarget{classmatrix__generic_a79d7d011cb15c4321bd16b5830879db4}{\index{matrix\-\_\-generic@{matrix\-\_\-generic}!swaprows@{swaprows}}
+\index{swaprows@{swaprows}!matrix_generic@{matrix\-\_\-generic}}
+\subsubsection[{swaprows}]{\setlength{\rightskip}{0pt plus 5cm}void matrix\-\_\-generic\-::swaprows (
+\begin{DoxyParamCaption}
+\item[{int}]{r1, }
+\item[{int}]{r2}
+\end{DoxyParamCaption}
+)}}\label{classmatrix__generic_a79d7d011cb15c4321bd16b5830879db4}
+Swap two rows of matrix 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+matrix\-\_\-generic.\-hpp\item 
+matrix\-\_\-generic.\-cpp\end{DoxyCompactItemize}

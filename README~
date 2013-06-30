@@ -1,0 +1,22 @@
+README : CMLT written by Ashay Tamhane
+------------------------------------------------------------------------
+
+C++ Machine Learning Toolkit (CMLT) is my humble effort
+at creating a ML library from scratch (without using helper libraries).
+This library is NOT meant for people looking for ML libraries to be used
+for industrial purposes, as it is not optimized/foolproof in any way 
+whatsoever. The sole purpose of this library is to get a detailed 
+understanding of various methods and algorithms. You are free to use the
+code in any way you want, preferably along with a citation :)
+
+The 0.1 version of this library has a very limited scope, mainly with 
+focus on various matrix operations. It also supports a simple version of
+linear regression.
+
+Kindly go through the INSTALL file to get started. Please refer to
+the docs folder for functionality documentation. The examples folder is
+the best way to get started on using CMLT.
+
+------------------------------------------------------------------------
+
+

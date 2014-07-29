@@ -7,6 +7,6 @@ Compiling
 This step assumes that CMLT has been already installed. If not kindly refer to INSTALL file in the directory
 
 Type:
-g++ matrix_operations.cpp -lcmlt0.1 -o linreg
+g++ matrix_operations.cpp -lcmlt0.2 -o linreg
 
 

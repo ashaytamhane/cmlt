@@ -62,12 +62,6 @@ public:
 	Matrix operator()(int row,char c);
 
 	/*!
-		Support retrieving all the rows with specified range
-	*/
-
-	Matrix operator()(int row1,int row2,int col1,int col2);
-
-	/*!
 		Add two matrices
 	*/	
 	
@@ -165,72 +159,16 @@ public:
 	vector<Matrix> qr_algorithm();
 
 	/*!
-	 	Get the eigen vectors and eigen values of the matrix
+	 	Get the eigen values of the matrix
 	*/	
 	
-	vector<Matrix> eigen();
+	Matrix eigen();
 	
 	/*!
 		Return rank of the matrix
 	*/	
-
+	
 	int rank();
-	
-	/*!
-		Return Covariance matrix
-	*/	
-	
-	Matrix covariance();	
-
-	/*!
-		Return covariance of two variable (vectors)
-	*/
-	
-	float covariance(Matrix X1,Matrix X2);
-	
-	/*!
-		Return the Housholder matrix for a column vector
-        */	
-
-	Matrix householder(int k);
-
-	/*!
-		Return the norm of a vector
-	*/
-
-	
-	float norm();
-	
-	/*!
-		Return the bidiagonal reduction
-	*/
-	
-	vector<Matrix> bidiag_reduction();
-
-	/*!
-		Return the vector sweep	
-	*/
-
-	vector<Matrix> vsweep(Matrix d, Matrix e);
-
-	/*!
-		Rot the vector
-	*/
-
-	vector<float> rot(float f,float g);
-		
-	/*!
-		Bi-diagonal SVD
- 	*/
-	
-	Matrix bd_svd(Matrix d,Matrix e);
-
-	/*!
-		Calculate the SVD
-	*/
-
-	vector<Matrix> svd();
-
 	Matrix()
 	{
 		numrows=-1;

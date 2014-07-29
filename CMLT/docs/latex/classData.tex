@@ -1,0 +1,81 @@
+\hypertarget{classData}{\section{Data Class Reference}
+\label{classData}\index{Data@{Data}}
+}
+
+
+Class for handling data.  
+
+
+
+
+{\ttfamily \#include $<$data.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classData_a0637899de992e96ed4b8eeb6362f252b}{load\-\_\-file} (string filename)
+\item 
+void \hyperlink{classData_a7cf1bb80d6516b9c1c9da3d0af30b7c2}{split\-\_\-cols} (int)
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classData_a3e5387c97322f99c12eab3d260ee9a1f}{prepend\-\_\-ones} (\hyperlink{classMatrix}{Matrix} X)
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classData_a9090d93c356895c33b3318a9ab45db40}{get\-\_\-\-X} ()
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classData_a727e28db554b734b04acc811507f96fc}{get\-\_\-\-Y} ()
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classData_a926575c51977c29c177b4ed1e8297ea9}{get\-\_\-data} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for handling data. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classData_a926575c51977c29c177b4ed1e8297ea9}{\index{Data@{Data}!get\-\_\-data@{get\-\_\-data}}
+\index{get\-\_\-data@{get\-\_\-data}!Data@{Data}}
+\subsubsection[{get\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} Data\-::get\-\_\-data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classData_a926575c51977c29c177b4ed1e8297ea9}
+Returns the data loaded \hypertarget{classData_a9090d93c356895c33b3318a9ab45db40}{\index{Data@{Data}!get\-\_\-\-X@{get\-\_\-\-X}}
+\index{get\-\_\-\-X@{get\-\_\-\-X}!Data@{Data}}
+\subsubsection[{get\-\_\-\-X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} Data\-::get\-\_\-\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classData_a9090d93c356895c33b3318a9ab45db40}
+Returns the 'X' split of the matrix \hypertarget{classData_a727e28db554b734b04acc811507f96fc}{\index{Data@{Data}!get\-\_\-\-Y@{get\-\_\-\-Y}}
+\index{get\-\_\-\-Y@{get\-\_\-\-Y}!Data@{Data}}
+\subsubsection[{get\-\_\-\-Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} Data\-::get\-\_\-\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classData_a727e28db554b734b04acc811507f96fc}
+Returns the 'Y' split of the matrix \hypertarget{classData_a0637899de992e96ed4b8eeb6362f252b}{\index{Data@{Data}!load\-\_\-file@{load\-\_\-file}}
+\index{load\-\_\-file@{load\-\_\-file}!Data@{Data}}
+\subsubsection[{load\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} Data\-::load\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classData_a0637899de992e96ed4b8eeb6362f252b}
+Load data from a file in a matrix \hypertarget{classData_a3e5387c97322f99c12eab3d260ee9a1f}{\index{Data@{Data}!prepend\-\_\-ones@{prepend\-\_\-ones}}
+\index{prepend\-\_\-ones@{prepend\-\_\-ones}!Data@{Data}}
+\subsubsection[{prepend\-\_\-ones}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} Data\-::prepend\-\_\-ones (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}}]{X}
+\end{DoxyParamCaption}
+)}}\label{classData_a3e5387c97322f99c12eab3d260ee9a1f}
+Prepend the matrix with a column of ones \hypertarget{classData_a7cf1bb80d6516b9c1c9da3d0af30b7c2}{\index{Data@{Data}!split\-\_\-cols@{split\-\_\-cols}}
+\index{split\-\_\-cols@{split\-\_\-cols}!Data@{Data}}
+\subsubsection[{split\-\_\-cols}]{\setlength{\rightskip}{0pt plus 5cm}void Data\-::split\-\_\-cols (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classData_a7cf1bb80d6516b9c1c9da3d0af30b7c2}
+Splits a the matrix in 'X' and 'Y' matrices depending on the splitting column index passed as arguement 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+data.\-hpp\item 
+data.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+README : CMLT written by Ashay Tamhane
+------------------------------------------------------------------------
+
+C++ Machine Learning Toolkit (CMLT) is a ML library built from scratch (without using helper libraries).
+You are free to use the code in any way you want, preferably along with a citation :)
+
+Kindly go through the INSTALL file to get started. Please refer to
+the docs folder for functionality documentation. The examples folder is
+the best way to get started on using CMLT.
+
+Thanks for trying out CMLT!
+
+------------------------------------------------------------------------
+
+

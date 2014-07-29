@@ -1,51 +1,9 @@
 
-**** Build of configuration Debug for project CMLT ****
+**** Build of configuration Default for project CMLT ****
 
 make all 
-make: Warning: File `../src/data.cpp' has modification time 2.1e+04 s in the future
-Building file: ../src/data.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/data.d" -MT"src/data.d" -o "src/data.o" "../src/data.cpp"
-Finished building: ../src/data.cpp
- 
-Building file: ../src/matrix_generic.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/matrix_generic.d" -MT"src/matrix_generic.d" -o "src/matrix_generic.o" "../src/matrix_generic.cpp"
-../src/matrix_generic.cpp: In member function ‘std::string Matrix::get_type(std::string)’:
-../src/matrix_generic.cpp:140:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/matrix_generic.cpp:142:7: warning: unused variable ‘chk’ [-Wunused-variable]
-../src/matrix_generic.cpp:165:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/matrix_generic.cpp: In member function ‘float Matrix::operator()(int, int)’:
-../src/matrix_generic.cpp:254:10: warning: converting to non-pointer type ‘float’ from NULL [-Wconversion-null]
-../src/matrix_generic.cpp: In member function ‘void Matrix::insert(int, int, std::string)’:
-../src/matrix_generic.cpp:264:23: warning: NULL used in arithmetic [-Wpointer-arith]
-../src/matrix_generic.cpp:304:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/matrix_generic.cpp:309:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/matrix_generic.cpp: In member function ‘void Matrix::insert(int, int, T) [with T = float]’:
-../src/matrix_generic.hpp:251:23:   instantiated from here
-../src/matrix_generic.cpp:699:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/matrix_generic.cpp:704:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/matrix_generic.cpp: In member function ‘void Matrix::insert(int, int, T) [with T = int]’:
-../src/matrix_generic.cpp:551:24:   instantiated from here
-../src/matrix_generic.cpp:699:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/matrix_generic.cpp:704:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../src/matrix_generic.cpp: In member function ‘float Matrix::covariance(Matrix, Matrix)’:
-../src/matrix_generic.cpp:761:1: warning: control reaches end of non-void function [-Wreturn-type]
-../src/matrix_generic.cpp: In member function ‘float Matrix::operator()(int, int)’:
-../src/matrix_generic.cpp:256:1: warning: control reaches end of non-void function [-Wreturn-type]
-Finished building: ../src/matrix_generic.cpp
- 
-Building file: ../src/regress.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/regress.d" -MT"src/regress.d" -o "src/regress.o" "../src/regress.cpp"
-Finished building: ../src/regress.cpp
- 
-Building target: libCMLT.a
-Invoking: Cross GCC Archiver
-ar -r  "libCMLT.a"  ./src/data.o ./src/matrix_generic.o ./src/regress.o   
-ar: creating libCMLT.a
-Finished building target: libCMLT.a
- 
-make: warning:  Clock skew detected.  Your build may be incomplete.
+g++ -w -c src/matrix_generic.cpp src/data.cpp src/regress.cpp
+ar rcs lib/libcmlt0.2.a matrix_generic.o data.o regress.o
+rm matrix_generic.o data.o regress.o
 
 **** Build Finished ****
